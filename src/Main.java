@@ -1,3 +1,5 @@
+package src;
+
 public class Main {
     public static void main(String args[]){
         Invoice i = new Invoice("Contoso/2024/01");

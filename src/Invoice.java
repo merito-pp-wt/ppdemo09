@@ -1,3 +1,5 @@
+package src;
+
 import java.util.ArrayList;
 
 public class Invoice {
@@ -37,7 +39,7 @@ public class Invoice {
     public void print(){
         int position = 1;
         System.out.println("===========================");
-        System.out.println("Invoice "+id);
+        System.out.println("src.Invoice "+id);
         for(Product p: products){
             System.out.printf("%d . %s\n", position, p.getDescription());
             position++;
@@ -51,7 +53,7 @@ public class Invoice {
     }
 
     public String toString() {
-        return "Invoice " + id;
+        return "src.Invoice " + id;
     }
 
     public String removeProduct(int position){

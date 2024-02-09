@@ -11,7 +11,7 @@ manipulowanie kolekcją.
 
 ## Zadanie
 
-Dodaj do klasy `Invoice` następujące metody:
+Dodaj do klasy `src.Invoice` następujące metody:
 
 1. Metodę `minGrossPrice()` zwracającą nazwę produktu o najmniejszej cenie brutto.
 2. Metodę `averageGrossPrice()` obliczającą średnią cenę brutto produktów trzymanych w kolekcji.
