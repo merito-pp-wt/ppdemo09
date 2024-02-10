@@ -1,5 +1,3 @@
-package src;
-
 public class Product {
     private String name;
     private int netPrice;
