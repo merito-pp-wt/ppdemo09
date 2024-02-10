@@ -41,7 +41,7 @@ public class Invoice {
             Product currentProduct = products.get(i);
             System.out.printf("| %d | %s |\n", i+1, currentProduct.getDescription());
         }
-        System.out.println("| Total: " + getTotalNet() + " | " + getTotalGross() + "|");
+        System.out.println("| Total: " + getTotalNet() + " | " + getTotalGross() + " |");
         System.out.println("------------------------------------------------------");
     }
 
