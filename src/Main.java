@@ -1,5 +1,3 @@
-package src;
-
 public class Main {
     public static void main(String args[]){
         Invoice i = new Invoice("Contoso/2024/01");
@@ -14,8 +12,8 @@ public class Main {
 
         i.print();
 
-        String removed = i.removeProduct(1);
-        System.out.println("Removed product: " + removed);
+        String removedProductName = i.removeProduct(1);
+        System.out.println("Removed: " + removedProductName);
 
         i.print();
     }
