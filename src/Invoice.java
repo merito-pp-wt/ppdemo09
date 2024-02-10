@@ -35,15 +35,14 @@ public class Invoice {
     }
 
     public void print(){
-        int position = 1;
-        System.out.println("===========================");
+        System.out.println("------------------------------------------------------");
         System.out.println("Invoice "+id);
-        for(Product p: products){
-            System.out.printf("%d . %s\n", position, p.getDescription());
-            position++;
+        for(int i = 0; i < products.size(); i++){
+            Product currentProduct = products.get(i);
+            System.out.printf("| %d | %s |\n", i+1, currentProduct.getDescription());
         }
-        System.out.println("Total: " + getTotalNet() + " / " + getTotalGross());
-        System.out.println("===========================");
+        System.out.println("| Total: " + getTotalNet() + " | " + getTotalGross() + "|");
+        System.out.println("------------------------------------------------------");
     }
 
     public int getNumberOfItems(){
@@ -51,17 +50,17 @@ public class Invoice {
     }
 
     public String toString() {
-        return "src.Invoice " + id;
+        return "I'm invoice " + id;
     }
 
     public String removeProduct(int position){
         if(position < 0 || position >= getNumberOfItems()) {
-            return "not removed";
+            return "no product to remove";
         }
         else {
             String s = products.get(position).toString();
             products.remove(position);
-            return "removed product name:" + s;
+            return "removed: " + s;
         }
     }
 }
