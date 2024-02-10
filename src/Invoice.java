@@ -1,5 +1,3 @@
-package src;
-
 import java.util.ArrayList;
 
 public class Invoice {
@@ -39,7 +37,7 @@ public class Invoice {
     public void print(){
         int position = 1;
         System.out.println("===========================");
-        System.out.println("src.Invoice "+id);
+        System.out.println("Invoice "+id);
         for(Product p: products){
             System.out.printf("%d . %s\n", position, p.getDescription());
             position++;
@@ -63,7 +61,7 @@ public class Invoice {
         else {
             String s = products.get(position).toString();
             products.remove(position);
-            return "removed:" + s;
+            return "removed product name:" + s;
         }
     }
 }
